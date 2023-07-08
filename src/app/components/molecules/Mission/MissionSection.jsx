@@ -1,29 +1,17 @@
 import React from "react";
 import Image from "next/image";
-import AboutImage from "../../../static/image/About__Image.png";
+import MissionImage from "../../../static/image/About__Image.png";
 
-const AboutSection = () => {
+const MissionSection = () => {
   return (
     <section>
-      <div className="bg-arabica sm:h-[500px] md:h-[600px] lg:h-[700px] xl:h-[600px] flex items-center">
+      <div className="bg-section sm:h-[500px] md:h-[600px] lg:h-[700px] xl:h-[600px] flex items-center">
         <div className="container mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2">
-            <div className="col-span-1 flex justify-start items-center mt-4 md:mt-0">
-              <div className="w-48 sm:w-auto">
-                <Image
-                  src={AboutImage}
-                  alt="hero__image"
-                  width={300}
-                  height={300}
-                  className="rounded-md"
-                />
-              </div>
-            </div>
-
             <div className="col-span-1 flex justify-start">
               <div>
                 <p className="text-4xl font-bold text-white text-[58px] leading-tight">
-                  About Us
+                  Mission
                 </p>
                 <div className="py-5">
                   <p className="text-white py-4">
@@ -45,6 +33,18 @@ const AboutSection = () => {
                 </div>
               </div>
             </div>
+
+            <div className="col-span-1 flex justify-end items-center mt-4 md:mt-0">
+              <div className="w-48 sm:w-auto">
+                <Image
+                  src={MissionImage}
+                  alt="hero__image"
+                  width={300}
+                  height={300}
+                  className="rounded-md"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -52,4 +52,4 @@ const AboutSection = () => {
   );
 };
 
-export default AboutSection;
+export default MissionSection;
