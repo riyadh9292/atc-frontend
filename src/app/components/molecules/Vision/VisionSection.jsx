@@ -2,9 +2,7 @@ import React from "react";
 import Image from "next/image";
 import AboutImage from "../../../static/image/About__Image.png";
 
-const AboutSection = () => {
-  
-
+const VisionSection = () => {
   return (
     <section data-aos="zoom-in-up">
       <div className="bg-arabica sm:h-[500px] md:h-[600px] lg:h-[700px] xl:h-[600px] flex items-center">
@@ -25,7 +23,7 @@ const AboutSection = () => {
             <div className="col-span-1 flex justify-start">
               <div>
                 <p className="text-4xl font-bold text-white text-[58px] leading-tight">
-                  About Us
+                  Vision
                 </p>
                 <div className="py-5">
                   <p className="text-white py-4">
@@ -54,4 +52,4 @@ const AboutSection = () => {
   );
 };
 
-export default AboutSection;
+export default VisionSection;
