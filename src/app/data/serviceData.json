@@ -1,0 +1,17 @@
+[
+  {
+    "image": "/image/About__Image.png",
+    "title": "Service 1",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  },
+  {
+    "image": "/image/About__Image.png",
+    "title": "Service 2",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  },
+  {
+    "image": "/image/About__Image.png",
+    "title": "Service 3",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  }
+]

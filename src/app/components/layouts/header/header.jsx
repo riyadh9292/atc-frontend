@@ -1,7 +1,10 @@
 import React from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { TiThMenu } from "react-icons/ti";
 import { BsPeople } from "react-icons/bs";
+import { AiOutlineUser } from "react-icons/ai";
+import HeroImage from "../../../static/image/Atc__Logo__global.png";
 
 const menuItems = [
   {
@@ -44,12 +47,20 @@ const menuItems = [
 
 const Header = ({ isMenuOpen, onToggleMenu }) => {
   return (
-    <header className="bg-golden">
+    <header className="bg-section">
       <div className="container">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-32">
           <div className="flex-shrink-0">
             <Link href="/home">
-              <span className="font-bold text-16 text-white">Logo</span>
+              <span className="font-bold text-16 text-white">
+                <Image
+                  src={HeroImage}
+                  alt="hero__image"
+                  width={100}
+                  height={100}
+                  className="rounded-md"
+                />
+              </span>
             </Link>
           </div>
           <div className="hidden md:block">
@@ -69,6 +80,9 @@ const Header = ({ isMenuOpen, onToggleMenu }) => {
                   </span>
                 </Link>
               ))}
+              <div className="bg-golden p-3 rounded-lg cursor-pointer">
+                <AiOutlineUser className="text-white" />
+              </div>
             </nav>
           </div>
 
