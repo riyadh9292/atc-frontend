@@ -1,51 +1,25 @@
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
-@import "@fontsource/roboto/300.css";
-@import "@fontsource/roboto/400.css";
-@import "@fontsource/roboto/500.css";
-@import "@fontsource/roboto/600.css";
-@import "@fontsource/roboto/700.css";
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@layer utilities {
+    .container {
+      @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 min-w-0;
+    }
+  }
 
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: "Lato", sans-serif;
-  /* font-family: 'Noto Sans', sans-serif;
-  font-family: 'Open Sans', sans-serif; */
-  padding: 0px !important;
-  overflow: auto !important;
-  background-color: #f3f4f6;
-  overflow-x: hidden !important;
-  /* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Lato, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
-  /* font-family: 'Proxima Nova', sans-serif ;   */
-}
-* {
-  box-sizing: border-box;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+::-webkit-scrollbar {
+    width: 7px;
+    scroll-behavior: smooth;
 }
 
-.font-light {
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
+::-webkit-scrollbar-track {
+    background-color: #91959c;
 }
 
-.font-regular {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-}
-
-.font-semibold {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-}
-
-.font-bold {
-  font-family: "Roboto", sans-serif;
-  font-weight: 600;
-}
-.font-extrabold {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
+::-webkit-scrollbar-thumb {
+    background-color: #0d9488;
+    border-radius: 5px;
 }
