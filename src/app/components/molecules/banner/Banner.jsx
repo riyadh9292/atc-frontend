@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "../../atoms/Button/Button";
+import Button from "@/app/components/atoms/button/Button";
 
 const Banner = () => {
   return (

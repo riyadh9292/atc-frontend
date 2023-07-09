@@ -6,10 +6,6 @@ import Button from "../../atoms/Button/Button";
 const JoinCommunity = () => {
   return (
     <div className="py-5">
-      <h1 className="display-1 my-5 services-header">
-        Our Very very Special Package
-      </h1>
-
       <div className="parallax">
         <div className="container mx-auto pt-28 text-white">
           <h6 className="py-2.5 text-xl text-white font-semibold flex items-center gap-2">
