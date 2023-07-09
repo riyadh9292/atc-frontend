@@ -26,7 +26,7 @@ const JoinCommunity = () => {
           </Button>
         </div>
       </div>
-      <div className="parallax-content "></div>
+      {/* <div className="parallax-content "></div> */}
     </div>
   );
 };
