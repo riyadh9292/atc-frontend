@@ -1,0 +1,17 @@
+[
+  {
+    "count": "1",
+    "title": "Service 1",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  },
+  {
+    "count": "2",
+    "title": "Service 2",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  },
+  {
+    "count": "3",
+    "title": "Service 3",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  }
+]

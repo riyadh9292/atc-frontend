@@ -12,6 +12,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
+  background: #F2F8FB;
 }
 
 ::-webkit-scrollbar {
@@ -24,6 +25,6 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #D2AF26;
+    background-color: #F38222;
     border-radius: 5px;
 }

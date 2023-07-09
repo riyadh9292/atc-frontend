@@ -10,9 +10,9 @@ export default function Home() {
     <Layout>
       <Hero />
       <AboutSection/>
-      <MissionSection/>
+      {/* <MissionSection/>
       <VisionSection/>
-      <ServiceSection/>
+      <ServiceSection/> */}
     </Layout>
   );
 }

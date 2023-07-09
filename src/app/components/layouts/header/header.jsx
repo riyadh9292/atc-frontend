@@ -4,7 +4,7 @@ import Link from "next/link";
 import { TiThMenu } from "react-icons/ti";
 import { BsPeople } from "react-icons/bs";
 import { AiOutlineUser } from "react-icons/ai";
-import HeroImage from "../../../static/image/Atc__Logo__global.png";
+import HeroImage from "../../../static/image/logo__primary.png";
 
 const menuItems = [
   {
@@ -13,7 +13,7 @@ const menuItems = [
     sectionId: "home",
     hasSectionId: true,
     icon: (
-      <BsPeople className="inline-block mr-1 h-5 w-5 text-white md:hidden" />
+      <BsPeople className="inline-block mr-1 h-5 w-5 text-graphite md:hidden" />
     ),
   },
   {
@@ -22,7 +22,7 @@ const menuItems = [
     sectionId: "about-us",
     hasSectionId: true,
     icon: (
-      <BsPeople className="inline-block mr-1 h-5 w-5 text-white md:hidden" />
+      <BsPeople className="inline-block mr-1 h-5 w-5 text-graphite md:hidden" />
     ),
   },
   {
@@ -31,7 +31,7 @@ const menuItems = [
     sectionId: "hotline",
     hasSectionId: true,
     icon: (
-      <BsPeople className="inline-block mr-1 h-5 w-5 text-white md:hidden" />
+      <BsPeople className="inline-block mr-1 h-5 w-5 text-graphite md:hidden" />
     ),
   },
   {
@@ -40,19 +40,19 @@ const menuItems = [
     sectionId: "contact",
     hasSectionId: true,
     icon: (
-      <BsPeople className="inline-block mr-1 h-5 w-5 text-white md:hidden" />
+      <BsPeople className="inline-block mr-1 h-5 w-5 text-graphite md:hidden" />
     ),
   },
 ];
 
 const Header = ({ isMenuOpen, onToggleMenu }) => {
   return (
-    <header className="bg-section">
+    <header className="bg-white">
       <div className="container">
-        <div className="flex items-center justify-between h-32">
+        <div className="flex items-center justify-between h-24">
           <div className="flex-shrink-0">
             <Link href="/home">
-              <span className="font-bold text-16 text-white">
+              <span className="font-bold text-16 text-graphite">
                 <Image
                   src={HeroImage}
                   alt="hero__image"
@@ -72,15 +72,15 @@ const Header = ({ isMenuOpen, onToggleMenu }) => {
                   }`}
                   key={index}
                 >
-                  <span className="hover:bg-arabica flex items-center px-3 py-2 rounded-md text-sm font-medium">
+                  <span className="hover:bg-fanta flex items-center px-3 py-2 rounded-md text-sm font-medium">
                     {item.icon}
-                    <span className="hidden md:inline text-white hover:text-white">
+                    <span className="hidden md:inline text-graphite hover:text-white">
                       {item.label}
                     </span>
                   </span>
                 </Link>
               ))}
-              <div className="bg-golden p-3 rounded-lg cursor-pointer">
+              <div className="bg-fanta p-3 rounded-lg cursor-pointer">
                 <AiOutlineUser className="text-white" />
               </div>
             </nav>
