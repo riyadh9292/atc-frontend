@@ -14,6 +14,7 @@ module.exports = {
         graphite: "#1B2430",
         arabica: "#0A642B",
         golden: "#D2AF26",
+        fanta: "#F38222",
       },
       fontFamily: {
         sans: ["Poppins", "sans-serif"],
@@ -21,7 +22,7 @@ module.exports = {
         handlee: ['handlee', 'sans-serif'],
       },
       backgroundImage: {
-        'section': "linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('/image/forex.jpg')",
+        'section': "linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('/image/forex__image.jpg')",
       },
     },
   },

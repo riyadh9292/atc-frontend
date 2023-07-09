@@ -12,13 +12,12 @@ const HeroSection = () => {
             <div className="col-span-1 flex justify-start">
               <div>
                 <p className="text-4xl font-bold text-white text-[58px] leading-tight">
-                  Invest with stable
-                  <span className="text-golden">platform</span>
+                Profitability on the
+                  <span className="text-fanta">rise</span>
                 </p>
                 <div className="py-5">
-                  <p className="text-white">Make money fast money</p>
                   <p className="text-white">
-                    Invest your money in A Trusted and reliable company
+                  ATC has provided innovative ideas and income opportunities to live a life in balance.
                   </p>
                 </div>
                 <Button variant="primary">Sign Up Now</Button>
@@ -26,13 +25,13 @@ const HeroSection = () => {
             </div>
             <div className="col-span-1 flex justify-end items-center mt-4 md:mt-0">
               <div className="w-48 sm:w-auto">
-                <Image
+                {/* <Image
                   src={HeroImage}
                   alt="hero__image"
                   width={300}
                   height={300}
                   className="rounded-md"
-                />
+                /> */}
               </div>
             </div>
           </div>
