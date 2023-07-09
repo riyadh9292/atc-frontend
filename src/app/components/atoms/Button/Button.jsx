@@ -1,6 +1,6 @@
 import React from "react";
 
-const Button = ({ variant, onClick, children }) => {
+const Button = ({ variant, onClick, children, className }) => {
   let classes = "px-4 py-2 rounded-lg";
   if (variant === "primary") {
     classes += " bg-fanta text-white";
@@ -11,7 +11,7 @@ const Button = ({ variant, onClick, children }) => {
   }
 
   return (
-    <button className={classes} onClick={onClick}>
+    <button className={classes + " " + className} onClick={onClick}>
       {children}
     </button>
   );
