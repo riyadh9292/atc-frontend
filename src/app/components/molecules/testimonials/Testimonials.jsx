@@ -38,7 +38,7 @@ const Testimonials = () => {
           </div>
         </div>
 
-        <div>
+        <div className="flex justify-center items-center">
             Hello Test
         </div>
       </div>
