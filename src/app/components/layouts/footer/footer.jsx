@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "../../atoms/Button/Button";
+
 import "./Footer.css";
 import HeroImage from "../../../static/image/logo__primary.png";
 import Image from "next/image";

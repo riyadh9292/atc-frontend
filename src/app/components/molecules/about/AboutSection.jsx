@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import AboutImage from "../../../static/image/about__image.jpg";
-import Button from "../../atoms/Button/Button";
+import Button from "@/app/components/atoms/button/Button";
 
 const AboutSection = () => {
   return (
