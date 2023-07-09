@@ -22,22 +22,50 @@ export default function Footer() {
       </div>{" "}
       <div className="container text-white pt-[200px]">
         <div className="grid grid-cols-4 text-center">
-          <div className="flex flex-col items-start ">
+          <div className="flex flex-col items-start gap-2.5">
             <Image
               src={HeroImage}
               alt="hero__image"
               width={100}
               height={100}
-              className="rounded-md"
+              className="rounded-md pb-4"
             />
+            <p className="text-xl font-[400] leading-[30px]">© 2023, ATC</p>
+            <p className="text-xl font-[400] leading-[30px]">
+              All rights reserved .
+            </p>
           </div>
-          <div className="">Our services</div>
-          <div className="">Terms & Privacy policy</div>
-          <div className="">Contact Us</div>
+          <div className="flex flex-col items-start gap-2.5  ">
+            <p className="text-[25px] font-bold leading-[38px] pb-4">
+              Our Service
+            </p>
+            <p className="text-xl font-[400] leading-[30px]">Trading FOREX</p>
+            <p className="text-xl font-[400] leading-[30px]">Trading Crypto</p>
+            <p className="text-xl font-[400] leading-[30px]">Easy income</p>
+          </div>
+          <div className="flex flex-col items-start gap-2.5">
+            <p className="text-[25px] font-bold leading-[38px]  pb-4">
+              Terms & Privacy policy
+            </p>
+            <p className="text-xl font-[400] leading-[30px]">ATC Overview</p>
+            <p className="text-xl font-[400] leading-[30px]">Privacy</p>
+            <p className="text-xl font-[400] leading-[30px]">
+              Terms & Conditions
+            </p>
+          </div>
+          <div className="flex flex-col items-start gap-2.5 pl-8">
+            <p className="text-[25px] font-bold leading-[38px]  pb-4 ">
+              Contact Us
+            </p>
+            <p className="text-xl font-[400] leading-[30px]">
+              Dhaka, Bangladesh
+            </p>
+            <p className="text-xl font-[400] leading-[30px]">support@atc.com</p>
+          </div>
         </div>
-        <div className="flex justify-center items-center h-12">
+        {/* <div className="flex justify-center items-center h-12">
           <p className="text-white">All rights reserved By ATC © 2023</p>
-        </div>
+        </div> */}
       </div>
     </section>
   );
