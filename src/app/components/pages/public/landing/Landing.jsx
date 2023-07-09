@@ -5,6 +5,7 @@ import WorldMarket from "@/app/components/molecules/worldMarket/WorldMarket";
 import ServiceSection from "@/app/components/molecules/service/ServiceSection";
 import Testimonials from "@/app/components/molecules/testimonials/Testimonials";
 import JoinCommunity from "@/app/components/molecules/join-community/JoinCommunity";
+import FAQ from "@/app/components/molecules/faq/FAQ";
 
 const Landing = () => {
   return (
@@ -15,6 +16,7 @@ const Landing = () => {
       <ServiceSection/>
       <Testimonials/>
       <JoinCommunity />
+      <FAQ/>
     </section>
   );
 };
