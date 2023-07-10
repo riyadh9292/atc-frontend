@@ -13,6 +13,7 @@ import {
   BsTwitter,
   BsYoutube,
 } from "react-icons/bs";
+import ScrollToTop from "../../atoms/scrollToTop/ScrollToTop";
 
 export default function Footer() {
   return (
@@ -125,7 +126,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      {/* <ScrollToTop/> */}
+      <ScrollToTop />
     </section>
   );
 }
