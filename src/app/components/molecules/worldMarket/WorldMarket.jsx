@@ -7,7 +7,7 @@ const WorldMarket = () => {
   return (
     <setion>
       <div className="flex flex-col items-center py-24">
-        <h1 className="text-5xl font-bold mb-4 text-center">
+        <h1 className="text-3xl font-bold mb-4 text-center">
           Where the world does <br />
           <span className="text-fanta"> Market </span>
         </h1>
@@ -29,7 +29,7 @@ const WorldMarket = () => {
               />
             </div>
             <div className="flex justify-between items-center">
-              <p className="text-3xl font-bold text-graphite py-4">
+              <p className="text-2xl font-bold text-graphite py-4">
                 Forex Trading
               </p>
               <div>
@@ -48,7 +48,7 @@ const WorldMarket = () => {
               />
             </div>
             <div className="flex justify-between items-center">
-              <p className="text-3xl font-bold text-graphite py-4">
+              <p className="text-2xl font-bold text-graphite py-4">
                 Crypto Trading
               </p>
               <div>
