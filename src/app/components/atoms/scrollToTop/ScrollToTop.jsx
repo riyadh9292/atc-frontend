@@ -1,14 +1,16 @@
-import { useState, useClient } from "react";
+"use client";
+import { useState, useEffect } from "react";
 import { FaChevronUp } from "react-icons/fa";
 
 const ScrollToTop = () => {
   const [showButton, setShowButton] = useState(false);
   const [scrollProgress, setScrollProgress] = useState(0);
 
-  useClient(() => {
+  useEffect(() => {
     const handleScroll = () => {
       const scrolled = window.scrollY || document.documentElement.scrollTop;
-      const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+      const windowHeight =
+        window.innerHeight || document.documentElement.clientHeight;
       const documentHeight = document.documentElement.scrollHeight;
       const progress = (scrolled / (documentHeight - windowHeight)) * 100;
       setShowButton(scrolled > 0);
