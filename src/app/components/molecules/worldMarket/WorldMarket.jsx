@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "../../atoms/button/Button";
-import AboutImage from "../../../static/image/about__image.jpg";
+import AboutImage from "../../../static/image/forex.jpg";
 import Image from "next/image";
 
 const WorldMarket = () => {

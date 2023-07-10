@@ -1,11 +1,9 @@
 import React from "react";
 
-const FAQ = () => {
-  return <section>
-    <div className="h-96">
-    Hello
+export default function FAQ() {
+  return (
+    <div>
+      FAQ
     </div>
-  </section>;
-};
-
-export default FAQ;
+  );
+}
