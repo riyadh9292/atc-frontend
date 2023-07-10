@@ -16,7 +16,7 @@ const Banner = () => {
                 <p className="text-fanta text-5xl sm:text-6xl md:text-7xl xl:text-6xl font-bold">
                   on the rise
                 </p>
-                <div className="pb-5">
+                <div className="pb-5 pt-7">
                   <p className="text-white font-semibold">
                     ATC has provided innovative ideas and income <br />
                     opportunities to live a life in balance.
