@@ -4,7 +4,7 @@ import Button from "../../atoms/button/Button";
 const Contact = () => {
   return (
     <section>
-      <div className="container mx-auto py-16 bg-white rounded-lg">
+      <div className="container mx-auto py-16 bg-contact rounded-lg ">
         <div className="flex flex-col items-center">
           <h1 className="text-5xl font-bold mb-4 text-center">
             <span className="text-fanta">GET</span>IN TOUCH

@@ -17,7 +17,7 @@ const Landing = () => {
       <ServiceSection />
       <JoinCommunity />
       <Testimonials />
-      {/* <FAQ /> */}
+      <FAQ />
       <Contact />
     </section>
   );

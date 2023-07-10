@@ -24,6 +24,7 @@ module.exports = {
       backgroundImage: {
         'section': "linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('/image/forex__image.jpg')",
         'parallax': "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/image/bg__image.jpg')",
+        'contact': "url('/image/contact__bg.jpg'),",
       },
     },
   },
