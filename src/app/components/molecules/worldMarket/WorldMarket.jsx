@@ -28,6 +28,14 @@ const WorldMarket = () => {
                 className="rounded-md"
               />
             </div>
+            <div className="flex justify-between items-center">
+              <p className="text-3xl font-bold text-graphite py-4">
+                Forex Trading
+              </p>
+              <div>
+                <Button variant="primary">Trade Now</Button>
+              </div>
+            </div>
           </div>
           <div className="bg-white p-4 rounded-lg shadow-md">
             <div className="w-48 sm:w-auto">
@@ -38,6 +46,14 @@ const WorldMarket = () => {
                 height={500}
                 className="rounded-md"
               />
+            </div>
+            <div className="flex justify-between items-center">
+              <p className="text-3xl font-bold text-graphite py-4">
+                Crypto Trading
+              </p>
+              <div>
+                <Button variant="primary">Trade Now</Button>
+              </div>
             </div>
           </div>
         </div>
