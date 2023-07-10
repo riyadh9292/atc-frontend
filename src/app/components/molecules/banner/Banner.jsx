@@ -10,13 +10,13 @@ const Banner = () => {
           <div className="grid grid-cols-1 md:grid-cols-2">
             <div className="col-span-1 flex justify-start">
               <div>
-                <p className="text-4xl font-bold text-white text-[58px] leading-tight blinkingText">
-                  Profitability on the
-                  <span className="text-fanta"> rise</span>{" "}
+                <p className="text-4xl font-bold text-white text-[58px] leading-tight blink__text">
+                  Profitability 
                 </p>
+                <p className="text-fanta text-[58px] font-bold">on the rise</p>
                 <div className="pb-5 ">
                   <p className="text-white font-semibold">
-                    ATC has provided innovative ideas and income <br />{" "}
+                    ATC has provided innovative ideas and income <br />
                     opportunities to live a life in balance.
                   </p>
                 </div>
