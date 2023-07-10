@@ -8,7 +8,7 @@ const WorldMarket = () => {
     <setion>
       <div className="flex flex-col items-center py-24">
         <h1 className="text-5xl font-bold mb-4 text-center">
-          Where the world does <br />{" "}
+          Where the world does <br />
           <span className="text-fanta"> Market </span>
         </h1>
         <p className="text-gray-600 mb-8">
