@@ -1,19 +1,21 @@
-import { useState, useEffect } from "react";
-import { ChevronUpIcon } from "@heroicons/react/solid";
+import { useState, useClient } from "react";
+import { FaChevronUp } from "react-icons/fa";
 
 const ScrollToTop = () => {
   const [showButton, setShowButton] = useState(false);
   const [scrollProgress, setScrollProgress] = useState(0);
 
-  useEffect(() => {
+  useClient(() => {
     const handleScroll = () => {
-      const scrolled = document.documentElement.scrollTop;
-      const windowHeight = document.documentElement.clientHeight;
+      const scrolled = window.scrollY || document.documentElement.scrollTop;
+      const windowHeight = window.innerHeight || document.documentElement.clientHeight;
       const documentHeight = document.documentElement.scrollHeight;
       const progress = (scrolled / (documentHeight - windowHeight)) * 100;
       setShowButton(scrolled > 0);
       setScrollProgress(progress);
     };
+
+    handleScroll();
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -38,7 +40,7 @@ const ScrollToTop = () => {
           scrollProgress > 0 ? "border-gray-500" : "border-transparent"
         }`}
       >
-        <ChevronUpIcon className="h-6 w-6 text-white" />
+        <FaChevronUp className="h-6 w-6 text-white" />
       </div>
     </button>
   );
