@@ -13,7 +13,7 @@ const Testimonials = () => {
           </p>
         </div>
 
-        <div className="flex gap-5 justify-between items-center py-14">
+        <div className="flex gap-5 justify-between items-center py-14 bg-white p-10 rounded-xl">
           <div>
             <div>
               <p className="text-4xl font-bold pt-3 text-graphite">
