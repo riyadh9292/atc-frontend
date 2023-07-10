@@ -6,7 +6,7 @@ import Button from "@/app/components/atoms/button/Button";
 const AboutSection = () => {
   return (
     <section data-aos="zoom-in-up">
-      <div className="bg-white sm:h-[500px] md:h-[600px] lg:h-[700px] xl:h-[600px] flex items-center">
+      <div className="bg-white h-[500px] sm:h-[600px] md:h-[700px] lg:h-[600px] xl:h-[600px] flex items-center">
         <div className="container mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2">
             <div className="col-span-1 flex justify-start items-center mt-4 md:mt-0">
