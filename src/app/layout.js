@@ -1,15 +1,17 @@
-import './globals.css'
-
+import { Providers } from "@/redux/provider";
+import "./globals.css";
 
 export const metadata = {
-  title: 'ATC | Arab Trading Company',
-  description: 'ATC',
-}
+  title: "ATC | Arab Trading Company",
+  description: "ATC",
+};
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <Providers>{children}</Providers>
+      </body>
     </html>
-  )
+  );
 }
