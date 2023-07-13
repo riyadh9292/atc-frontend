@@ -3,9 +3,17 @@ import Button from "@/app/components/atoms/button/Button";
 import React, { useState } from "react";
 import { BsEye, BsEyeSlash } from "react-icons/bs";
 import Image from "next/image";
+import { useDispatch, useSelector } from "react-redux";
+
 import LogoImage from "@/app/static/image/logo__primary.png";
+import { registerUser } from "@/redux/features/auth/authActions";
 
 const Registration = () => {
+  const dispatch = useDispatch();
+  const { loading, userInfo, error, success } = useSelector(
+    (state) => state.auth
+  );
+
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
@@ -54,20 +62,22 @@ const Registration = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    // need to bind here
+    dispatch(registerUser(e.target.value));
   };
 
   return (
     <div className="flex justify-center items-center h-screen">
       <div className="max-w-xl w-full bg-white p-8 rounded-lg shadow-lg">
-      <div className="flex justify-center pt-5 pb-14">
-            <Image
-              src={LogoImage}
-              alt="hero__image"
-              width={120}
-              height={120}
-              className="rounded-md"
-            />
-          </div>
+        <div className="flex justify-center pt-5 pb-14">
+          <Image
+            src={LogoImage}
+            alt="hero__image"
+            width={120}
+            height={120}
+            className="rounded-md"
+          />
+        </div>
         <form onSubmit={handleSubmit}>
           <div className="flex mb-4">
             <div className="w-1/2 mr-2">
@@ -139,7 +149,11 @@ const Registration = () => {
                 className="absolute top-1/2 right-3 -translate-y-1/2 cursor-pointer"
                 onClick={handlePasswordVisibilityToggle}
               >
-                {passwordVisible ? <BsEye className="h-5 w-5 text-gray-400" /> : <BsEyeSlash  className="h-5 w-5 text-gray-400" />}
+                {passwordVisible ? (
+                  <BsEye className="h-5 w-5 text-gray-400" />
+                ) : (
+                  <BsEyeSlash className="h-5 w-5 text-gray-400" />
+                )}
               </div>
             </div>
           </div>
@@ -163,7 +177,11 @@ const Registration = () => {
                 className="absolute top-1/2 right-3 -translate-y-1/2 cursor-pointer"
                 onClick={handleConfirmPasswordVisibilityToggle}
               >
-                {confirmPasswordVisible ? <BsEye  className="h-5 w-5 text-gray-400"/> : <BsEyeSlash  className="h-5 w-5 text-gray-400"/>}
+                {confirmPasswordVisible ? (
+                  <BsEye className="h-5 w-5 text-gray-400" />
+                ) : (
+                  <BsEyeSlash className="h-5 w-5 text-gray-400" />
+                )}
               </div>
             </div>
           </div>
@@ -201,7 +219,10 @@ const Registration = () => {
           </div>
         </form>
         <div className="mt-4 text-center text-gray-700">
-          Already have an account? <a href="#" className="text-fanta">Log In</a>
+          Already have an account?{" "}
+          <a href="#" className="text-fanta">
+            Log In
+          </a>
         </div>
       </div>
     </div>

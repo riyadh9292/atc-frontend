@@ -4,8 +4,12 @@ import React, { useState } from "react";
 import { BsEye, BsEyeSlash } from "react-icons/bs";
 import Image from "next/image";
 import LogoImage from "@/app/static/image/logo__primary.png";
+import { useDispatch, useSelector } from "react-redux";
+import { userLogin } from "../features/auth/authActions";
 
 const Login = () => {
+  const { loading, error } = useSelector((state) => state.user);
+  const dispatch = useDispatch();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
@@ -29,6 +33,8 @@ const Login = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    // need to work here
+    dispatch(userLogin(e.target.value));
   };
 
   return (
