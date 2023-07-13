@@ -5,7 +5,7 @@ import { BsEye, BsEyeSlash } from "react-icons/bs";
 import Image from "next/image";
 import LogoImage from "@/app/static/image/logo__primary.png";
 
-const RegistrationForm = () => {
+const Registration = () => {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
@@ -54,7 +54,6 @@ const RegistrationForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Perform registration logic here
   };
 
   return (
@@ -209,4 +208,4 @@ const RegistrationForm = () => {
   );
 };
 
-export default RegistrationForm;
+export default Registration;

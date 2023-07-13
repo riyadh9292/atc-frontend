@@ -32,13 +32,13 @@ const ScrollToTop = () => {
 
   return (
     <button
-      className={`fixed bottom-6 right-6 bg-gray-900 text-white rounded-full p-2 shadow-md ${
+      className={`fixed bottom-6 right-6 bg-fanta text-white rounded-xl p-2 shadow-md ${
         showButton ? "opacity-100" : "opacity-0"
       }`}
       onClick={scrollToTop}
     >
       <div
-        className={`h-12 w-12 flex items-center justify-center border-4 border-gray-400 rounded-full transition-all ${
+        className={`h-8 w-8 flex items-center justify-center border-4rounded-full transition-all ${
           scrollProgress > 0 ? "border-gray-500" : "border-transparent"
         }`}
       >
