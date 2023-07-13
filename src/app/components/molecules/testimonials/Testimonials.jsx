@@ -1,6 +1,24 @@
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 
 const Testimonials = () => {
+  const [counter, setCounter] = useState(0);
+  const mainValue = 100;
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      if (counter < mainValue) {
+        setCounter((prevCounter) => prevCounter + 1);
+      } else {
+        clearInterval(timer);
+      }
+    }, 10);
+
+    return () => {
+      clearInterval(timer);
+    };
+  }, [counter, mainValue]);
+
   return (
     <section>
       <div className="container mx-auto py-11">
@@ -15,15 +33,15 @@ const Testimonials = () => {
           </div>
           <div className="flex gap-32">
             <div>
-              <p className="font-bold text-4xl">1000 +</p>
+              <p className="font-bold text-4xl">{counter} +</p>
               <p className="text-2xl font-semibold text-fanta">Our Team</p>
             </div>
             <div>
-              <p className="font-bold text-4xl">1000 +</p>
+              <p className="font-bold text-4xl">{counter} +</p>
               <p className="text-2xl font-semibold text-fanta">Our Team</p>
             </div>
             <div>
-              <p className="font-bold text-4xl">1000 +</p>
+              <p className="font-bold text-4xl">{counter} +</p>
               <p className="text-2xl font-semibold text-fanta">Our Team</p>
             </div>
           </div>
