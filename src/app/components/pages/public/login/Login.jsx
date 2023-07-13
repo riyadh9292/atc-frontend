@@ -33,7 +33,7 @@ const Login = () => {
 
   return (
     <div className="flex justify-center items-center h-screen">
-      <div className="max-w-md w-full bg-white p-8 rounded-lg shadow-lg">
+      <div className="max-w-xl w-full bg-white p-8 rounded-lg shadow-lg">
         <form onSubmit={handleSubmit}>
           <div className="flex justify-center py-6">
             <Image
