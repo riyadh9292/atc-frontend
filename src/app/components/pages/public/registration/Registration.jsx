@@ -54,7 +54,6 @@ const Registration = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Perform registration logic here
   };
 
   return (
