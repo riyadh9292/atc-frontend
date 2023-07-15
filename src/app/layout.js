@@ -1,5 +1,7 @@
+
 import { Providers } from "@/redux/provider";
-import "./globals.css";
+import 'aos/dist/aos.css';
+import "@/static/Styles/tailwind.css";
 
 export const metadata = {
   title: "ATC | Arab Trading Company",

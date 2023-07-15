@@ -1,6 +1,5 @@
-import Layout from "./components/layouts/layout/layout";
-import Landing from "./components/pages/public/landing/Landing";
-
+import Layout from "@/components/layouts/layout/";
+import Landing from "@/pages/public/landing/page";
 
 export default function Home() {
   return (
